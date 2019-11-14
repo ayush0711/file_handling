@@ -1,10 +1,7 @@
-#append text to a file and display the text
+#read last n lines of a file
 
-f=open('C:/Users/hp/PycharmProjects/untitled2/calc.txt','a+')
-f.seek(0)
-f.write('\nkanha')
-f.close()
 f=open('C:/Users/hp/PycharmProjects/untitled2/calc.txt','r')
-data=f.read()
-print(data)
+data=f.readlines()
+print(data[-1])
 f.close()
+
