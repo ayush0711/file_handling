@@ -1,5 +1,6 @@
-#read a file line by line and store it on a list
+#print longest words
 f=open('C:/Users/hp/PycharmProjects/untitled2/calc.txt','r')
-data=f.readlines()
-print(data)
+data=f.read().split()
+lw=max(data,key=len)
+print(lw)
 f.close()
